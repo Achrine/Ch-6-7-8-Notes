@@ -50,5 +50,18 @@ int main () {
     * return type
     * number of parameters 
     * data type of each parameter.
+    * 
+### 6.3 Function Prototypes
+* Ways to notify the compiler about a function before a call to the function: 
+    * Place function definition before calling functions definition. 
+    * Use a function prototype (function declaration) - like the function definition without the body.
+        *  Header: void printHeading()
+        *  Prototype: void printHeading();
+#### Prototype Notes 
+* Place prototypes near top of program
+* PRogram must include either prototype or full function definition before any call to the function -- compiler error otherwise
+* When using prototypes, can place function definitions in any order in source file. 
+* 
+### 6.4 Sending Data into a Function 
 
 
