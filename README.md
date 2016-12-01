@@ -91,4 +91,15 @@ int main () {
     * The first argument willbe used to initialize the first parameter, the second argument to initialize the second parameter, etc. 
 
 ### 6.5 Passing Data by Value
+* Pass by value: When an argument is passed to a function, its value is copied into the parameter 
+* Changes to the parameter in teh function do not affect the value of the argument. 
 
+### 6.6 Using Functions in Menu-Driven Programs
+* Functions can be used: 
+    * to implement user caices from menue 
+    * to implement general-purpose tasks: 
+        * Higher-Level functions can call general purpose functions, minimizing the total number of functions and speedig program development time
+### 6.7 The *return* statement.
+* Statements following the return statement will not be executed. 
+* Can be Used to prevent abnormal termination of program
+* In a void function without a return statement, the function ends at its last } 
