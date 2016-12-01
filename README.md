@@ -50,7 +50,7 @@ int main () {
     * return type
     * number of parameters 
     * data type of each parameter.
-    * 
+    
 ### 6.3 Function Prototypes
 * Ways to notify the compiler about a function before a call to the function: 
     * Place function definition before calling functions definition. 
@@ -59,9 +59,36 @@ int main () {
         *  Prototype: void printHeading();
 #### Prototype Notes 
 * Place prototypes near top of program
-* PRogram must include either prototype or full function definition before any call to the function -- compiler error otherwise
+* Program must include either prototype or full function definition before any call to the function -- compiler error otherwise
 * When using prototypes, can place function definitions in any order in source file. 
-* 
-### 6.4 Sending Data into a Function 
 
+### 6.4 Sending Data into a Function 
+* Can pass values into a function at time of call: 
+    * c = pow (a, b);
+* Values passed to function are arguments. 
+* Variables in a function that hold the values passed as arguments are parameters. 
+
+#### Other Parameter Terminology 
+* A parameter can also be called a formal parameter or a formal argument 
+* An argument can also be called an actual parameter or an actual argument
+* For each function argument, 
+    * the prototype must include the data type of each parameter inside its parantheses 
+    * The header must include a declaration for each prameter in its ()
+        * void evenOrOdd (int); // prototype 
+        * void evenOrOdd (int num) // header
+        * evenOrOdd(val); //call
+#### Function Call notes
+* Value of argumen is copied into parameter when teh function is called 
+* A parameter's scope is the function which usess it 
+* Function can have multiple parameters 
+* There must be a data type listed in teh prototype () and an argument declaration in the function header () for each parameter 
+* Argemunts will be promoted/demoted as secessary to match parameters. 
+
+
+#### Passing Muliple Arguments
+* When calling a function and passing multiple arguments: 
+    * the number of arguments in the call must match teh prototype and definition 
+    * The first argument willbe used to initialize the first parameter, the second argument to initialize the second parameter, etc. 
+
+### 6.5 Passing Data by Value
 
